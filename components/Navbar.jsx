@@ -10,13 +10,15 @@ const Navbar = () => {
     { id: "#education", label: "Education" },
     { id: "#skills", label: "Skills" },
   ];
+  const nav_design = 
+  "fixed top-4 left-0 right-0 z-50 mx-auto max-w-5xl w-[calc(100%-2rem)] rounded-2xl md:rounded-full bg-white/75 backdrop-blur-md shadow-2xl shadow-indigo-500/10 px-6 md:px-8 transition-all duration-300"
   const design_menu =
-    "px-4 py-2 rounded-full font-medium text-sm text-gray-600 hover:text-indigo-600 hover:bg-gray-50/80 transition-all duration-200";
+    "px-4 py-2 rounded-full font-medium text-base text-gray-800 hover:text-white hover:bg-black transition-all duration-200"
   const design_menu_mobile =
-    "block px-4 py-2.5 rounded-2xl text-base font-medium text-gray-600 hover:text-indigo-600 hover:bg-gray-50 active:bg-indigo-50/50 transition-all duration-200";
+    "block px-4 py-2.5 rounded-2xl text-base font-medium text-gray-800 hover:text-white hover:bg-black active:bg-indigo-50/50 transition-all duration-200"
 
   return (
-    <nav className="fixed top-4 left-0 right-0 z-50 mx-auto max-w-5xl w-[calc(100%-2rem)] rounded-3xl md:rounded-full bg-white/80 backdrop-blur-md border border-gray-100/50 shadow-md px-6 md:px-8 transition-all duration-300">
+    <nav className={nav_design}>
       <div className="flex justify-between h-16 items-center">
         {/* logo */}
         <div className="flex shrink-0">
@@ -73,7 +75,6 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-
       {/* Mobile Dropdown */}
       <div
         className={`${isOpen ? "block" : "hidden"} md:hidden pb-4 pt-2 space-y-1 border-t border-gray-100/50 mt-1`}
