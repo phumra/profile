@@ -1,4 +1,6 @@
 import React from "react";
+import bg_home from "../public/img/bg_01.png";
+import profile from "../public/img/profile02.JPG"
 
 const Home = () => {
   return (
@@ -6,7 +8,7 @@ const Home = () => {
       <section
         id="home"
         style={{
-          backgroundImage: `url('/img/profile02.JPG')`,
+          backgroundImage: `url('${bg_home}')`,
         }}
         className="relative min-h-screen md:h-screen w-full flex items-start justify-center bg-cover bg-center bg-no-repeat"
       >
@@ -57,7 +59,7 @@ const Home = () => {
               >
                 <div className="w-full h-full">
                   <img
-                    src="./public/img/profile02.JPG"
+                    src={profile}
                     alt="Phumrapee Profile"
                     className="w-full h-full object-cover group transition-transform duration-700"
                   />
