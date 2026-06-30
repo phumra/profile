@@ -56,7 +56,7 @@ const Home = () => {
                 className="relative w-64 h-64 md:w-80 md:h-80 overflow-hidden rounded-xl border-4 border-indigo/20 shadow-2xl shadow-indigo-500/30 backdrop-blur-sm hover:scale-105 transition-transform duration-500"
               >
                 <img
-                  src="public/img/profile02.jpg"
+                  src="./public/img/profile02.jpg"
                   alt="Phumrapee Profile"
                   className="w-full h-full object-cover"
                 />
