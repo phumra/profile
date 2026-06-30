@@ -1,5 +1,4 @@
 import React from "react";
-import bg_home from "../public/img/bg_01.png";
 
 const Home = () => {
   return (
@@ -7,7 +6,7 @@ const Home = () => {
       <section
         id="home"
         style={{
-          backgroundImage: `url('${bg_home}')`,
+          backgroundImage: `url('/img/bg_01.png')`,
         }}
         className="relative min-h-screen md:h-screen w-full flex items-start justify-center bg-cover bg-center bg-no-repeat"
       >
