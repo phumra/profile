@@ -6,7 +6,7 @@ const Home = () => {
       <section
         id="home"
         style={{
-          backgroundImage: `url('/img/bg_01.png')`,
+          backgroundImage: `url('/img/profile02.JPG')`,
         }}
         className="relative min-h-screen md:h-screen w-full flex items-start justify-center bg-cover bg-center bg-no-repeat"
       >
